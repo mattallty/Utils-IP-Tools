@@ -8,10 +8,8 @@
  * 2. CIDR format:         1.2.3/24  OR  1.2.3.4/255.255.255.0
  * 3. Start-End IP format: 1.2.3.0-1.2.3.255
  *
- *
  * Copyright 2012 by Matthias ETIENNE <matt@allty.com>
  * Changes : package this function in a namespace/class.
- *
  *
  * Copyright 2008: Paul Gregg <pgregg@pgregg.com>
  * 10 January 2008
