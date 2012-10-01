@@ -1,0 +1,21 @@
+{
+    "name": "allty/utils-ip",
+    "type": "library",
+    "description": "Allty IP Utils",
+    "keywords": [],
+    "homepage": "http://symfony.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthias ETIENNE",
+            "email": "matt@allty.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3"
+    },
+    "autoload": {
+        "psr-0": { "Allty\\Utils": "" }
+    }
+}
