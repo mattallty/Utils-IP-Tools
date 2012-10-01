@@ -15,6 +15,12 @@
     "require": {
         "php": ">=5.3"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/mattallty/Utils-IP-Tools"
+        }
+    ],
     "autoload": {
         "psr-0": { "Allty\\Utils": "" }
     }
