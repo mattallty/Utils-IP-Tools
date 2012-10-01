@@ -23,5 +23,5 @@
     "autoload": {
         "psr-0": { "Allty\\Utils": "" }
     },
-    "target-dir": "Allty/Utils",
+    "target-dir": "Allty/Utils"
 }
