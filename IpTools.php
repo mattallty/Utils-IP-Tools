@@ -89,7 +89,7 @@ class IpTools
                 return (($ip_dec >= $lower_dec) && ($ip_dec <= $upper_dec));
             }
 
-            throw new RangeException('Range argument is not in 1.2.3.4/24 or 1.2.3.4/255.255.255.0 format');
+            throw new \RangeException('Range argument is not in 1.2.3.4/24 or 1.2.3.4/255.255.255.0 format');
             return false;
         }
 
