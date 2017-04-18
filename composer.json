@@ -2,26 +2,33 @@
     "name": "allty/utils-ip",
     "type": "library",
     "description": "Allty IP Utils",
-    "keywords": [],
+    "keywords": ["ip", "range", "utils"],
     "homepage": "https://github.com/mattallty/Utils-IP-Tools",
     "license": "MIT",
     "authors": [
         {
             "name": "Matthias ETIENNE",
             "email": "matt@allty.com"
+        },
+        {
+            "name": "Armando Lüscher",
+            "email": "armando@noplanman.ch"
         }
     ],
     "require": {
         "php": ">=5.3"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/mattallty/Utils-IP-Tools"
-        }
-    ],
-    "autoload": {
-        "psr-0": { "Allty\\Utils": "" }
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
     },
-    "target-dir": "Allty/Utils"
+    "autoload": {
+        "psr-4": {
+            "Allty\\Utils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Allty\\Utils\\Test\\": "tests/"
+        }
+    }
 }
