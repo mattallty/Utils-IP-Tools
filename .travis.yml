@@ -1,0 +1,31 @@
+language: php
+
+matrix:
+    include:
+        - php: 7.1
+          env: DEPS=low
+        - php: 7.1
+        - php: 7.0
+        - php: 5.6
+        - php: 5.5
+        - php: 5.4
+        - php: 5.3
+          env: DEPS=low
+        - php: 5.3
+        - php: nightly
+        - php: hhvm
+    allow_failures:
+        - php: nightly
+        - php: hhvm
+    fast_finish: true
+
+notifications:
+    on_success: never
+    on_failure: always
+
+install:
+    - if [ "$DEPS" == "low" ]; then travis_retry composer update --prefer-source --prefer-lowest --prefer-stable --no-interaction; fi
+    - if [ "$DEPS" != "low" ]; then travis_retry composer install --prefer-source --no-interaction; fi
+
+script:
+    - vendor/bin/phpunit

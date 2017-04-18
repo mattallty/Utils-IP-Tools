@@ -9,7 +9,7 @@ use Allty\Utils\IpTools;
  *
  * @author Armando Lüscher <armando@noplanman.ch>
  */
-class IpToolsTest extends \PHPUnit\Framework\TestCase
+class IpToolsTest extends \PHPUnit_Framework_TestCase
 {
     public function testIpEqual()
     {
