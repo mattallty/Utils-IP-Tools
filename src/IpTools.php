@@ -38,8 +38,15 @@ namespace Allty\Utils;
  * @author Matthias ETIENNE <matt@allty.com>
  *
  */
-class IpTools
+final class IpTools
 {
+    /**
+     * Initialisation is futile.
+     */
+    private function __construct()
+    {
+    }
+
     /**
      * Checks if an IP is part of an IP range.
      *
@@ -51,7 +58,7 @@ class IpTools
      *
      * @return boolean true if IP is part of range, otherwise false.
      */
-    static public function ipInRange($ip, $range)
+    public static function ipInRange($ip, $range)
     {
         if (!filter_var($ip, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4)) {
             return false;
